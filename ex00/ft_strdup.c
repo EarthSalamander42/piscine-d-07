@@ -6,7 +6,7 @@
 /*   By: jmaguire <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/17 10:30:28 by jmaguire          #+#    #+#             */
-/*   Updated: 2018/07/17 10:30:30 by jmaguire         ###   ########.fr       */
+/*   Updated: 2018/07/25 13:37:00 by jmaguire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-char *ft_strdup(char *src)
+char	*ft_strdup(char *src)
 {
 	char *dest;
 
@@ -51,12 +51,4 @@ char *ft_strdup(char *src)
 	}
 	ft_strcpy(dest, src);
 	return (dest);
-}
-
-int		main(void)
-{
-	char src[] = "EarthSalamander #42";
-
-	printf("Result: %s", ft_strdup(src));
-	return (0);
 }
