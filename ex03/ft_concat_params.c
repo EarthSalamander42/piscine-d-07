@@ -55,16 +55,16 @@ char	*ft_concat_params(int argc, char **argv)
 			total_bytes++;
 		i++;
 	}
-	out = malloc(total_bytes + 1);
-	if (out == NULL)
+	if ((out = malloc(sizeof(char) * (total_bytes + 1))) == NULL)
 		return (0);
 	out[0] = '\0';
 	i = 1;
 	while (i < argc)
 	{
 		ft_strcat(out, argv[i]);
-		ft_strcat(out, "\n");
 		i++;
+		if (i != argc)
+			ft_strcat(out, "\n");
 	}
 	return (out);
 }
