@@ -6,9 +6,11 @@
 /*   By: jmaguire <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/17 12:34:26 by jmaguire          #+#    #+#             */
-/*   Updated: 2018/07/25 13:39:03 by jmaguire         ###   ########.fr       */
+/*   Updated: 2018/07/26 21:31:53 by jmaguire         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
 
 int		ft_ultimate_range(int **range, int min, int max)
 {
