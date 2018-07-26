@@ -10,9 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-
 #define IS_WHITESPACE(c) (c == '\t' || c == '\n' || c == ' ')
 
 int		ft_count_words(const char *arg)
